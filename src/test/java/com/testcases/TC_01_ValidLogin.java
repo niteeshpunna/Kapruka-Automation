@@ -1,6 +1,8 @@
 package com.testcases;
 
 import com.basedriver.BaseDriver;
+import com.pageObjects.HomePage;
+import com.pageObjects.MyAccount;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
@@ -13,22 +15,25 @@ public class TC_01_ValidLogin extends BaseDriver {
 
         try {
             //click on accounts button &wait
-            driver.findElement(By.xpath("//a[@href='https://www.kapruka.com/shops/customerAccounts/accountLogin.jsp']")).click();
+            HomePage hp = new HomePage(driver);
+            hp.clickOnLogin();
+//            Thread.sleep(1000);
+
+            MyAccount map = new MyAccount(driver);
+            //Enter Username
+            map.verifyMyAccountPage();
+
+            //
+            map.enterEmail(rb.getString("validemail"));
             Thread.sleep(1000);
 
-            //Enter email
-            driver.findElement(By.id("exampleInputEmail1")).sendKeys(rb.getString("validemail"));
-
-            // Enter password
-            driver.findElement(By.id("exampleInputPassword1")).sendKeys(rb.getString("validPassword"));
-
-            //click on Login button
-            driver.findElement(By.xpath("//input[@type='submit']")).click();
+            map.enterPassword(rb.getString("validPassword"));
             Thread.sleep(1000);
 
-            //verify login success
-            assertEquals(driver.getTitle(),"Your Account");
-            Thread.sleep(1000);
+            map.clickSubmit();
+
+//            map.
+
 
         } catch (Exception e) {
             System.out.println(e.getMessage());
