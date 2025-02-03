@@ -2,8 +2,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <test verbose="2" name="E:/Selenium/Kapruka-Automation/src/test/java/com">
-        <!--parameter name="os" value="Windows"/>
-        <parameter name="browser" value="chrome"/> -->
+        <parameter name="os" value="Windows"/>
+        <parameter name="browser" value="edge"/>
 
         <classes>
             <!-- <class name="com.testcases.TC_01_ValidLogin"/>

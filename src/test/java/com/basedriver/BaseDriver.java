@@ -26,23 +26,24 @@ public class BaseDriver {
 
 //    @Parameters({"os","browser"})
     @BeforeMethod
-    public void launchBrowser()
+    @Parameters("browser")
+    public void launchBrowser(String br)
     {
         rb = ResourceBundle.getBundle("data");
         logger = LogManager.getLogger(this.getClass());
 
 
-//        switch(br.toLowerCase())
-//        {
-//            case "chrome":  driver = new ChromeDriver();
-//                            System.setProperty("webdriver.chrome.driver","E:\\Selenium\\chromedriver-win64\\chromedriver.exe");break;
-//            case "edge" : driver = new EdgeDriver(); break;
-//            case "firefox" : driver = new FirefoxDriver(); break;
-//            default: System.out.println("Invalid Browser "); return;
-//        }
+        switch(br.toLowerCase())
+        {
+            case "chrome":  driver = new ChromeDriver();
+                            System.setProperty("webdriver.chrome.driver","E:\\Selenium\\chromedriver-win64\\chromedriver.exe");break;
+            case "edge" : driver = new EdgeDriver(); break;
+            case "firefox" : driver = new FirefoxDriver(); break;
+            default: System.out.println("Invalid Browser "); return;
+        }
 
-        System.setProperty("webdriver.chrome.driver","E:\\Selenium\\chromedriver-win64\\chromedriver.exe");
-        driver = new ChromeDriver();
+//        System.setProperty("webdriver.chrome.driver","E:\\Selenium\\chromedriver-win64\\chromedriver.exe");
+//        driver = new ChromeDriver();
 
         driver.get(rb.getString("url"));
 
