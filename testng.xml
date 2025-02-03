@@ -6,8 +6,8 @@
         <parameter name="browser" value="edge"/>
 
         <classes>
-            <!-- <class name="com.testcases.TC_01_ValidLogin"/>
-            <class name="com.testcases.TC_02_InvalidLogin"/> -->
+            <class name="com.testcases.TC_01_ValidLogin"/>
+            <class name="com.testcases.TC_02_InvalidLogin"/>
             <class name="com.testcases.TC_03_ValidAccountCreation"/>
         </classes>
     </test>
