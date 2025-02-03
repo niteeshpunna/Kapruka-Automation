@@ -1,0 +1,66 @@
+2025-02-03 15:15:39 INFO  TC_03_ValidAccountCreation:20 - ****** Starting TC_03_ValidAccountCreation ********* 
+2025-02-03 15:15:42 INFO  TC_03_ValidAccountCreation:24 - Clicked on Account link
+2025-02-03 15:15:43 INFO  TC_03_ValidAccountCreation:30 -  Account page is verified
+2025-02-03 15:15:46 INFO  TC_03_ValidAccountCreation:34 - Clicked on Create Account 
+2025-02-03 15:15:46 INFO  TC_03_ValidAccountCreation:56 - Provided the details required for account creation
+2025-02-03 15:15:50 INFO  TC_03_ValidAccountCreation:61 - Successfully New account cretaed for SKZKXVSIGC
+2025-02-03 15:15:50 INFO  TC_03_ValidAccountCreation:65 - Validated Successful Account creation
+2025-02-03 15:15:52 INFO  TC_03_ValidAccountCreation:75 - ********** END of TC_03_ValidAccountCreation *********
+2025-02-03 15:19:34 INFO  TC_03_ValidAccountCreation:20 - ****** Starting TC_03_ValidAccountCreation ********* 
+2025-02-03 15:19:37 INFO  TC_03_ValidAccountCreation:24 - Clicked on Account link
+2025-02-03 15:19:38 INFO  TC_03_ValidAccountCreation:30 -  Account page is verified
+2025-02-03 15:19:40 INFO  TC_03_ValidAccountCreation:34 - Clicked on Create Account 
+2025-02-03 15:19:41 INFO  TC_03_ValidAccountCreation:56 - Provided the details required for account creation
+2025-02-03 15:19:42 ERROR TC_03_ValidAccountCreation:70 - Test Failed...
+2025-02-03 15:19:42 DEBUG TC_03_ValidAccountCreation:71 - Debug logs..
+2025-02-03 15:22:00 INFO  TC_03_ValidAccountCreation:20 - ****** Starting TC_03_ValidAccountCreation ********* 
+2025-02-03 15:22:03 INFO  TC_03_ValidAccountCreation:24 - Clicked on Account link
+2025-02-03 15:22:04 INFO  TC_03_ValidAccountCreation:30 -  Account page is verified
+2025-02-03 15:22:05 INFO  TC_03_ValidAccountCreation:34 - Clicked on Create Account 
+2025-02-03 15:22:06 INFO  TC_03_ValidAccountCreation:56 - Provided the details required for account creation
+2025-02-03 15:22:07 ERROR TC_03_ValidAccountCreation:70 - Test Failed...
+2025-02-03 15:22:07 DEBUG TC_03_ValidAccountCreation:71 - Debug logs..
+2025-02-03 18:11:33 INFO  TC_03_ValidAccountCreation:20 - ****** Starting TC_03_ValidAccountCreation ********* 
+2025-02-03 18:11:36 INFO  TC_03_ValidAccountCreation:24 - Clicked on Account link
+2025-02-03 18:11:37 INFO  TC_03_ValidAccountCreation:30 -  Account page is verified
+2025-02-03 18:11:39 INFO  TC_03_ValidAccountCreation:34 - Clicked on Create Account 
+2025-02-03 18:11:41 INFO  TC_03_ValidAccountCreation:56 - Provided the details required for account creation
+2025-02-03 18:11:45 INFO  TC_03_ValidAccountCreation:61 - Successfully New account cretaed for CTWIHQWBIQ
+2025-02-03 18:11:45 INFO  TC_03_ValidAccountCreation:65 - Validated Successful Account creation
+2025-02-03 18:11:47 INFO  TC_03_ValidAccountCreation:75 - ********** END of TC_03_ValidAccountCreation *********
+2025-02-03 18:15:54 INFO  TC_03_ValidAccountCreation:20 - ****** Starting TC_03_ValidAccountCreation ********* 
+2025-02-03 18:15:57 INFO  TC_03_ValidAccountCreation:24 - Clicked on Account link
+2025-02-03 18:15:58 INFO  TC_03_ValidAccountCreation:30 -  Account page is verified
+2025-02-03 18:16:00 INFO  TC_03_ValidAccountCreation:34 - Clicked on Create Account 
+2025-02-03 18:16:01 INFO  TC_03_ValidAccountCreation:56 - Provided the details required for account creation
+2025-02-03 18:16:02 ERROR TC_03_ValidAccountCreation:70 - Test Failed...
+2025-02-03 18:16:20 INFO  TC_03_ValidAccountCreation:20 - ****** Starting TC_03_ValidAccountCreation ********* 
+2025-02-03 18:16:24 INFO  TC_03_ValidAccountCreation:24 - Clicked on Account link
+2025-02-03 18:16:25 INFO  TC_03_ValidAccountCreation:30 -  Account page is verified
+2025-02-03 18:16:25 INFO  TC_03_ValidAccountCreation:34 - Clicked on Create Account 
+2025-02-03 18:16:26 INFO  TC_03_ValidAccountCreation:56 - Provided the details required for account creation
+2025-02-03 18:16:30 INFO  TC_03_ValidAccountCreation:61 - Successfully New account cretaed for KZVJUMZPUM
+2025-02-03 18:16:30 INFO  TC_03_ValidAccountCreation:65 - Validated Successful Account creation
+2025-02-03 18:16:32 INFO  TC_03_ValidAccountCreation:75 - ********** END of TC_03_ValidAccountCreation *********
+2025-02-03 18:36:35 INFO  TC_03_ValidAccountCreation:20 - ****** Starting TC_03_ValidAccountCreation ********* 
+2025-02-03 18:36:40 INFO  TC_03_ValidAccountCreation:24 - Clicked on Account link
+2025-02-03 18:36:41 INFO  TC_03_ValidAccountCreation:30 -  Account page is verified
+2025-02-03 18:36:43 INFO  TC_03_ValidAccountCreation:34 - Clicked on Create Account 
+2025-02-03 18:36:44 INFO  TC_03_ValidAccountCreation:56 - Provided the details required for account creation
+2025-02-03 18:36:45 ERROR TC_03_ValidAccountCreation:70 - Test Failed...
+2025-02-03 18:37:29 INFO  TC_03_ValidAccountCreation:20 - ****** Starting TC_03_ValidAccountCreation ********* 
+2025-02-03 18:37:31 INFO  TC_03_ValidAccountCreation:24 - Clicked on Account link
+2025-02-03 18:37:32 INFO  TC_03_ValidAccountCreation:30 -  Account page is verified
+2025-02-03 18:37:34 INFO  TC_03_ValidAccountCreation:34 - Clicked on Create Account 
+2025-02-03 18:37:34 INFO  TC_03_ValidAccountCreation:56 - Provided the details required for account creation
+2025-02-03 18:37:39 INFO  TC_03_ValidAccountCreation:61 - Successfully New account cretaed for UKZNBWCWUP
+2025-02-03 18:37:39 INFO  TC_03_ValidAccountCreation:65 - Validated Successful Account creation
+2025-02-03 18:37:41 INFO  TC_03_ValidAccountCreation:75 - ********** END of TC_03_ValidAccountCreation *********
+2025-02-03 18:38:05 INFO  TC_03_ValidAccountCreation:20 - ****** Starting TC_03_ValidAccountCreation ********* 
+2025-02-03 18:38:08 INFO  TC_03_ValidAccountCreation:24 - Clicked on Account link
+2025-02-03 18:38:09 INFO  TC_03_ValidAccountCreation:30 -  Account page is verified
+2025-02-03 18:38:10 INFO  TC_03_ValidAccountCreation:34 - Clicked on Create Account 
+2025-02-03 18:38:11 INFO  TC_03_ValidAccountCreation:56 - Provided the details required for account creation
+2025-02-03 18:38:14 INFO  TC_03_ValidAccountCreation:61 - Successfully New account cretaed for RPGPTZDVNY
+2025-02-03 18:38:14 INFO  TC_03_ValidAccountCreation:65 - Validated Successful Account creation
+2025-02-03 18:38:16 INFO  TC_03_ValidAccountCreation:75 - ********** END of TC_03_ValidAccountCreation *********
