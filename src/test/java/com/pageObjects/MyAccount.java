@@ -50,6 +50,12 @@ public class MyAccount extends BasePage{
     }
 
     //Click on Create Account
+    @FindBy(xpath = "//button[.='Create Account']")
+    WebElement createaccount;
+    public void clickCreateAccount()
+    {
+        createaccount.click();
+    }
 
     //verify broken Links
 

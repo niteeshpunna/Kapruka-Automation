@@ -16,23 +16,26 @@ public class TC_01_ValidLogin extends BaseDriver {
         try {
             //click on accounts button &wait
             HomePage hp = new HomePage(driver);
-            hp.clickOnLogin();
-//            Thread.sleep(1000);
+            hp.clickOnAccount();
+            Thread.sleep(1000);
 
+            //Creating an object for MyAccount page
             MyAccount map = new MyAccount(driver);
-            //Enter Username
+            //Verify the page
             map.verifyMyAccountPage();
 
-            //
+            //Enter Username
             map.enterEmail(rb.getString("validemail"));
             Thread.sleep(1000);
 
+            //Enter Password
             map.enterPassword(rb.getString("validPassword"));
             Thread.sleep(1000);
 
+            //Click on Submit
             map.clickSubmit();
 
-//            map.
+
 
 
         } catch (Exception e) {

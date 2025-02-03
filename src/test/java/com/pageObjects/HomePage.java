@@ -12,10 +12,11 @@ public class HomePage extends BasePage
     {
         super(driver);
     }
+
+    //Click on Account
     @FindBy(xpath="//a[@href='https://www.kapruka.com/shops/customerAccounts/accountLogin.jsp']")
     WebElement clickLogin;
-
-    public void clickOnLogin()
+    public void clickOnAccount()
     {
         clickLogin.click();
     }

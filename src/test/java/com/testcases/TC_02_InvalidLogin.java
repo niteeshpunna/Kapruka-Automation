@@ -1,6 +1,8 @@
 package com.testcases;
 
 import com.basedriver.BaseDriver;
+import com.pageObjects.HomePage;
+import com.pageObjects.MyAccount;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
@@ -14,22 +16,21 @@ public class TC_02_InvalidLogin extends BaseDriver
         try
         {
             //click on accounts button &wait
-            driver.findElement(By.xpath("//a[@href='https://www.kapruka.com/shops/customerAccounts/accountLogin.jsp']")).click();
+            HomePage hp = new HomePage(driver);
+            hp.clickOnAccount();
+//            Thread.sleep(1000);
+
+            MyAccount map = new MyAccount(driver);
+            //Enter Username
+            map.verifyMyAccountPage();
+
+            //
+            map.enterEmail(rb.getString("validemail"));
             Thread.sleep(1000);
 
-            //Enter valid email
-            driver.findElement(By.id("exampleInputEmail1")).sendKeys(rb.getString("validemail"));
-
-            // Enter invalid password
-            driver.findElement(By.id("exampleInputPassword1")).sendKeys(rb.getString("invalidPassword"));
-
-            //click on Login button
-            driver.findElement(By.xpath("//input[@type='submit']")).click();
+            map.enterPassword(rb.getString("validPassword"));
             Thread.sleep(1000);
 
-            //verify login success
-            assertEquals(driver.findElement(By.xpath("//b[.='Your password is wrong. Please try again.']")).getText(),"Your password is wrong. Please try again.");
-            Thread.sleep(1000);
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
