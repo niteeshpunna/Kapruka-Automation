@@ -4,13 +4,14 @@ import com.basedriver.BaseDriver;
 import com.pageObjects.HomePage;
 import com.pageObjects.MyAccount;
 import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
 public class TC_02_InvalidLogin extends BaseDriver
 {
-    @Test(priority=2)
+    @Test(priority=1)
     public void invalidPasswordLogin()
     {
         try
@@ -28,15 +29,24 @@ public class TC_02_InvalidLogin extends BaseDriver
             map.enterEmail(rb.getString("validemail"));
             Thread.sleep(1000);
 
-            map.enterPassword(rb.getString("validPassword"));
+            map.enterPassword(rb.getString("invalidPassword"));
+            Thread.sleep(1000);
+
+            //click on Login button
+            driver.findElement(By.xpath("//input[@type='submit']")).click();
+            Thread.sleep(1000);
+
+            //verify login success
+            assertEquals(driver.findElement(By.xpath("//b[1]")).getText(),"Your password is wrong. Please try again.");
             Thread.sleep(1000);
 
         } catch (Exception e) {
             System.out.println(e.getMessage());
+            Assert.fail();
         }
     }
 
-    @Test(priority=3)
+    @Test(priority=2)
     public void invalidEmailLogin()
     {
         try
@@ -56,14 +66,15 @@ public class TC_02_InvalidLogin extends BaseDriver
             Thread.sleep(1000);
 
             //verify login success
-            assertEquals(driver.findElement(By.xpath("Sorry, we did not find an account for that e-mail address.")).getText(),"Your password is wrong. Please try again.");
+            assertEquals(driver.findElement(By.xpath("//b[1]")).getText(),"Sorry, we did not find an account for that e-mail address.");
             Thread.sleep(1000);
         } catch (Exception e) {
             System.out.println(e.getMessage());
+            Assert.fail();
         }
     }
 
-    @Test(priority=4)
+    @Test(priority=3)
     public void invalidLoginCredentials() {
         try {
             //click on accounts button &wait
@@ -81,10 +92,11 @@ public class TC_02_InvalidLogin extends BaseDriver
             Thread.sleep(1000);
 
             //verify login success
-            assertEquals(driver.findElement(By.xpath("Sorry, we did not find an account for that e-mail address.")).getText(), "Your password is wrong. Please try again.");
+            assertEquals(driver.findElement(By.xpath("//b[1]")).getText(), "Sorry, we did not find an account for that e-mail address.");
             Thread.sleep(1000);
         } catch (Exception e) {
             System.out.println(e.getMessage());
+            Assert.fail();
         }
     }
 }

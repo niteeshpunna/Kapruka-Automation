@@ -3,14 +3,17 @@ package com.testcases;
 import com.basedriver.BaseDriver;
 import com.pageObjects.HomePage;
 import com.pageObjects.MyAccount;
+import com.pageObjects.NewAccountPage;
 import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 public class TC_01_ValidLogin extends BaseDriver {
 
-    @Test(priority=1)
+    @Test
     public void login() throws InterruptedException {
 
         try {
@@ -34,12 +37,14 @@ public class TC_01_ValidLogin extends BaseDriver {
 
             //Click on Submit
             map.clickSubmit();
+            Thread.sleep(1000);
 
-
-
+            //Verify the Login page
+            assertTrue(driver.findElement(By.xpath("//div[.='Logout ']")).isDisplayed());
 
         } catch (Exception e) {
             System.out.println(e.getMessage());
+            Assert.fail();
         }
     }
 }

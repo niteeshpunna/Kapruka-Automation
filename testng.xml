@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
+    <listeners>
+        <listener class-name="com.utilities.ExtentReportManager" />
+
+    </listeners>
     <test verbose="2" name="E:/Selenium/Kapruka-Automation/src/test/java/com">
         <parameter name="os" value="Windows"/>
         <parameter name="browser" value="edge"/>
 
         <classes>
-            <class name="com.testcases.TC_01_ValidLogin"/>
-            <class name="com.testcases.TC_02_InvalidLogin"/>
-            <class name="com.testcases.TC_03_ValidAccountCreation"/>
+             <class name="com.testcases.TC_01_ValidLogin"/>
+             <class name="com.testcases.TC_02_InvalidLogin"/>
+             <class name="com.testcases.TC_03_ValidAccountCreation"/>
         </classes>
     </test>
 </suite>
