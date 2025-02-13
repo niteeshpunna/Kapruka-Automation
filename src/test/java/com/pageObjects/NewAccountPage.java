@@ -22,13 +22,13 @@ public class NewAccountPage extends BasePage{
     }
 
     //Click on Create Account
-    @FindBy(xpath = "//button[.='Create Account']")
+    @FindBy(xpath = "//button[@onclick='checkForm();']")
     WebElement createaccount;
     public void clickCreateAccount()
     {
         js.executeScript("arguments[0].scrollIntoView(true);",createaccount);
-        wait.until(ExpectedConditions.elementToBeClickable(createaccount));
-        createaccount.click();
+        wait.until(ExpectedConditions.elementToBeClickable(createaccount)).click();
+
     }
 
     //Verfiy the Account creation Page

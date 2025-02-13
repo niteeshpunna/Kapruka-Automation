@@ -1,13 +1,20 @@
 package com.pageObjects;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 import static org.testng.Assert.assertEquals;
 
 public class MyAccount extends BasePage{
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    JavascriptExecutor js = (JavascriptExecutor)driver;
 
         public MyAccount(WebDriver driver) {
         super(driver);
@@ -50,11 +57,13 @@ public class MyAccount extends BasePage{
     }
 
     //Click on Create Account
-    @FindBy(xpath = "//button[.='Create Account']")
-    WebElement createaccount;
-    public void clickCreateAccount()
+    @FindBy(xpath = "//button[text()='Create Account']")
+    WebElement createaccount1;
+    public void clickCreateAccountonHomePage()
     {
-        createaccount.click();
+        js.executeScript("arguments[0].scrollIntoView(true);", createaccount1);
+        WebElement w = wait.until(ExpectedConditions.elementToBeClickable(createaccount1));
+        w.click();
     }
 
     //verify broken Links

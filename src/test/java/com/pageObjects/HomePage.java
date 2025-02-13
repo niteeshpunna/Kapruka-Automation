@@ -14,7 +14,7 @@ public class HomePage extends BasePage
     }
 
     //Click on Account
-    @FindBy(xpath="//a[@href='https://www.kapruka.com/shops/customerAccounts/accountLogin.jsp']")
+    @FindBy(xpath="//div[@class='myaccountblock']")
     WebElement clickLogin;
     public void clickOnAccount()
     {

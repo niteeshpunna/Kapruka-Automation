@@ -30,7 +30,7 @@ public class TC_03_ValidAccountCreation extends BaseDriver {
             logger.info(" Account page is verified");
 
             //Click on Create Account button
-            ma.clickCreateAccount();
+            ma.clickCreateAccountonHomePage();
             logger.info("Clicked on Create Account ");
 
             NewAccountPage nap = new NewAccountPage(driver);
@@ -59,6 +59,7 @@ public class TC_03_ValidAccountCreation extends BaseDriver {
             nap.clickCreateAccount();
             Thread.sleep(1000);
             logger.info("Successfully New account cretaed for "+firstname+lastname);
+
 
             // Verify account is created
             nap.verifySuccessfulAccountCreation();

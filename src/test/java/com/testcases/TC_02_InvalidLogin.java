@@ -16,6 +16,7 @@ public class TC_02_InvalidLogin extends BaseDriver
     {
         try
         {
+            logger.info("");
             //click on accounts button &wait
             HomePage hp = new HomePage(driver);
             hp.clickOnAccount();
